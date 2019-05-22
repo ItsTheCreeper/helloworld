@@ -19,7 +19,7 @@ function Circle() {
     this.draw = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 5;
         ctx.strokeStyle = "black";
         ctx.stroke();
     };
@@ -27,7 +27,7 @@ function Circle() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
         ctx.strokeStyle = "white";
-        ctx.lineWidth = 4;
+        ctx.lineWidth = 9;
         ctx.stroke();
     }
 }
