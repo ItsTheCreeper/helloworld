@@ -1,0 +1,217 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.header,
+.header-2 {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    background-image: url("images/header.jpg");
+}
+
+.header-2 {
+    background-image: url("images/header-2.jpg");
+    z-index: -1;
+}
+
+.header-container {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+
+.header-desc {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Amatic SC";
+    font-size: 60px;
+    padding: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.whoami {
+    height: 300px;
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.whoami-header {
+    line-height: 120px;
+    font-family: "Abril Fatface";
+    font-size: 60px;
+}
+
+.whoami-desc {
+    display: block;
+    line-height: 24px;
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.whoami-smileys {
+    float: right;
+}
+
+.whoami-pic {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.pic1 {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-filter: hue-rotate(50deg);
+    filter: hue-rotate(50deg);
+}
+
+.pic2 {
+    -webkit-transform: rotate(-45deg) translate(-40px, -50px);
+    -ms-transform: rotate(-45deg) translate(-40px, -50px);
+    transform: rotate(-45deg) translate(-40px, -50px);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.pic3 {
+    -webkit-transform: rotate(120deg) translate(10px, -10px);
+    -ms-transform: rotate(120deg) translate(10px, -10px);
+    transform: rotate(120deg) translate(10px, -10px);
+    -webkit-filter: hue-rotate(165deg);
+    filter: hue-rotate(165deg);
+}
+
+.pic4 {
+    -webkit-transform: rotate(-30deg) translate(-20px, 20px);
+    -ms-transform: rotate(-30deg) translate(-20px, 20px);
+    transform: rotate(-30deg) translate(-20px, 20px);
+}
+
+.pic5 {
+    -webkit-transform: rotate(60deg) translate(30px, 15px);
+    -ms-transform: rotate(60deg) translate(30px, 15px);
+    transform: rotate(60deg) translate(30px, 15px);
+    -webkit-filter: hue-rotate(-75deg);
+    filter: hue-rotate(-75deg);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0; 
+    height: 65.4px;
+    background-color: rgba(30, 144, 255, 0.9);
+    font-family: "Amatic SC";
+    animation: slide_down 1s;
+    -webkit-animation: slide_down 1s;
+}
+
+.navbar-elements {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar-item {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    
+}
+
+.navbar-item a {
+    color: black;
+    display: inline;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    background-color: crimson;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    -webkit-animation-name: slide;
+    animation-name: slide;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slide_down {
+    0% {
+        visibility: hidden;
+        top: -65.4px;
+    }
+    100% {
+        visibility: visible;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes slide_down {
+    0% {
+        visibility: hidden;
+        top: -65.4px;
+    }
+    100% {
+        visibility: visible;
+        top: 0;
+    }
+}
