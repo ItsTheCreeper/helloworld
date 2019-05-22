@@ -1,0 +1,54 @@
+
+body {
+    font-family: "Overpass";
+}
+
+.left {
+    left: 0;
+}
+
+.output {
+    display: block;
+    text-align: right;
+    font-size: 48px;
+    border: 5px solid darkgreen;
+    border-radius: 5px;
+    padding: 0px;
+    width: 50%;
+    float: left;
+    left: 0;
+    overflow-x: scroll;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    bottom: auto;
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+.button {
+    text-align: center;
+    font-size: 36px;
+    margin: 2px;
+    padding: 2px;
+    font-family: "Overpass";
+    background-color: lightgreen;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 500ms;
+}
+
+.button:hover {
+    background-color: darkgreen;
+    color: white;
+    transition: 500ms;
+}
+
+#output {
+    margin: 0;
+}

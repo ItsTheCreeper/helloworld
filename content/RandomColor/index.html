@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Random Color Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<!-- load random color on load/refresh -->
+
+<body onload="color()" id="color">
+    <!-- flexbox -->
+    <div class="flexbox">
+        <!--- Main section (rectangle-ish) -->
+        <div class="main">
+            <h1 class="header">Random Color Generator!</h1>
+            <button class="button" onclick="color()">Generate another one!</button>
+            <p>akiraonion</p>
+        </div>
+        <!-- Sliders -->
+        <div class="sliders">
+            <h2 class="slider-text">...or manually configure the color!</h2>
+            <div class="container">
+                <input type="range" class="slider-bar" id="r" min="0" max="255" />
+                <input type="range" class="slider-bar" id="g" min="0" max="255" />
+                <input type="range" class="slider-bar" id="b" min="0" max="255" />
+            </div>
+            <p>rgb values:<span id="rv">0</span>,<span id="gv">0</span>,<span id="bv">0</span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
