@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <title>Word counter</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-desc">word counter</h1>
+        <h2 class="header-subheader">by akiraonion</h2>
+    </div>
+    <div class="main">
+        <textarea placeholder="type your text here..." class="text" id="text" onkeyup="check()"></textarea>
+        <p class="count">word count: <span id="count">0</span>
+            <br />
+            note: do not put unnecessary spaces
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
