@@ -23,22 +23,27 @@ function Circle() {
         ctx.strokeStyle = "black";
         ctx.stroke();
     };
-    this.clear = function () {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        ctx.strokeStyle = "white";
-        ctx.lineWidth = 9;
-        ctx.stroke();
-    }
+}
+
+function clearScreen() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function thing() {
-    myCircle = new Circle();
-    myCircle.draw();
-    myCircles.push(myCircle);
     if (myCircles.length == 10) {
-        myCircles[0].clear();
         myCircles.shift();
+        myCircle = new Circle();
+        myCircles.push(myCircle);
+        clearScreen();
+        for (var i = 0; i < myCircles.length; i++) {
+            myCircles[i].draw();
+        }
+    } else {
+        myCircle = new Circle();
+        myCircles.push(myCircle);
+        for (var i = 0; i < myCircles.length; i++) {
+            myCircles[i].draw();
+        }
     }
 }
 
