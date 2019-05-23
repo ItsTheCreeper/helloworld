@@ -13,12 +13,14 @@ function Circle() {
     this.y = Math.floor(Math.random() * height);
     this.r = Math.floor(Math.random() * 256);
     this.g = Math.floor(Math.random() * 256);
-    this.b = Math.floor(Math.random() * 256);
+	this.b = Math.floor(Math.random() * 256);
+	this.width = (Math.floor(Math.random() * 10) + 1);
 	this.radius = (Math.floor(Math.random() * 275) + 25);
 	this.draw = function () {
 		ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        ctx.strokeStyle = "rgb(" + this.r + "," + this.g + "," + this.b + ")";
+		ctx.strokeStyle = "rgb(" + this.r + "," + this.g + "," + this.b + ")";
+		ctx.lineWidth = this.width;
 		ctx.stroke();
 	};
 }
@@ -28,4 +30,4 @@ function thing() {
 	myCircle.draw();
 }
 
-setInterval(function () { thing(); }, 10);
+setInterval(function () { thing(); }, 100);
