@@ -12,9 +12,6 @@ function Circle() {
 	this.x = Math.floor(Math.random() * width);
 	this.y = Math.floor(Math.random() * height);
 	this.radius = (Math.floor(Math.random() * 275) + 25);
-	this.gravity = 0;
-	this.gravitySpeed = 0.2;
-	this.bounce = 0.6;
 	this.draw = function () {
 		ctx.beginPath();
 		ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
